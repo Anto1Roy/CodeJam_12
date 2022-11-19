@@ -257,14 +257,40 @@
                 </select>     
             </li>
 
+            <br>
+
+            <li class="row">
+                <label for="covid"> Have you been exposed to Covid in the last 14 days? </label>
+                <select name="covud" id="ExposureToCovid" onchange=getValue(this)>
+                    <option value="No">No</option>
+                    <option value="Yes">Yes</option>
+                </select>     
+            </li>
+
+            <br>
+
+            <li class="row">
+                <label for="chronicdiarrhea"> Do you have chronic diahrrea? </label>
+                <select name="poop" id="ChronicDiarrheaSx" onchange=getValue(this)>
+                    <option value="No">No</option>
+                    <option value="Yes">Yes</option>
+                </select>     
+            </li>
+
+            <br>
+
+            <li class="row">
+                <label for="swallowpain"> Is there pain when you swallow? </label>
+                <select name="swallow" id="SwallowPain" onchange=getValue(this)>
+                    <option value="No">No</option>
+                    <option value="Yes">Yes</option>
+                </select>     
+            </li>
+
+            <br>
+
             <button class="row" id="SubmitButton">Submit Symptoms</button>
 
-
-
-
-           
-            
-            
 
         </div>
 
