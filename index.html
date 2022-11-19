@@ -85,12 +85,10 @@
             </li>
             <br>
             <li class="row">
-                <label for="clientGender"> Gender: </label>
+                <label for="clientGender"> Sex (biological): </label>
                 <select name="possibleGenders" id="Gender" onchange=getValue(this)>
-                    <option value="Male">Male</option>
-                    <option value="Male">Female</option>
-                    <option value="Male">Other</option>
-                    <option value="Male">Helicopter</option>
+                    <option value="2">Male</option>
+                    <option value="3">Female</option>
                 </select>
             </li>
             
@@ -107,11 +105,11 @@
             
             <br>
             <li class="row">
-                Temperature: <input type="number" step="0.1" id="clientTemp" min="95" max="109" onchange=getValue(this) oninput=getValue(this)>
+                Temperature: <input type="number" step="0.1" id="Temp" min="95" max="109" onchange=getValue(this) oninput=getValue(this)>
             </li>
             <br>
             <li class="row">
-                Heart Rate: <input type="number" id="clientRate" min="0" max="220" onchange=getValue(this) oninput=getValue(this)>
+                Heart Rate: <input type="number" id="HeartRate" min="0" max="220" onchange=getValue(this) oninput=getValue(this)>
             </li>
             <br>
             
