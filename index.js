@@ -152,8 +152,10 @@ analyze = requests.get(f"{URL}/Analyze?SessionID={id}")
 
 const submitButton=document.querySelector("#SubmitButton");
 let diseases;
+let tests;
 //Analyze the different symptoms to output the diagnostic
 submitButton.addEventListener("click", ()=>{
+    /*
     jQuery.ajax({
         url:`http://api.endlessmedical.com/v1/dx/Analyze?SessionID=${id}`,
         success:function(res){
@@ -165,6 +167,19 @@ submitButton.addEventListener("click", ()=>{
         },
         error:console.log("penis")
     });
+    */
+    jQuery.ajax({
+        url:`http://api.endlessmedical.com/v1/dx/GetSuggestedTests?SessionID=${id}`,
+        success:function(res2){
+            console.log("in the tests api");
+            console.log(res2);
+            
+            getTests();
+
+        },
+        error:console.log("penis")
+    });
+    
 })
 
 
