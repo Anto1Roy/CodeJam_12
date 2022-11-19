@@ -106,7 +106,7 @@ submitButton.addEventListener("click", ()=>{
 })
 
 
-
+/*
 function getValue(obj){
     //value fof the object
     const objectValue=obj.value;
@@ -115,6 +115,24 @@ function getValue(obj){
     jQuery.ajax({
         url:`http://api.endlessmedical.com/v1/dx/UpdateFeature?SessionID=${id}&name=${objectID}&value=${objectValue}`,
         success:function(res){
+            console.log(res);
+            //getSource(res.results[0].id);
+        },
+        error:console.log("penis")
+    })
+
+}
+*/
+function getValue(obj){
+    //value fof the object
+    const objectValue=obj.value;
+    //id of the object 
+    const objectID=obj.id;
+    jQuery.ajax({
+        type:"POST",
+        url:`http://api.endlessmedical.com/v1/dx/UpdateFeature?SessionID=${id}&name=${objectID}&value=${objectValue}`,
+        success:function(res){
+            console.log("success");
             console.log(res);
             //getSource(res.results[0].id);
         },
