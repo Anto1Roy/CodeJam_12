@@ -10,8 +10,9 @@
     --bg-main:linear-gradient(to top right, #05437c,#1475ac);
     --transition-speed:600ms;
     --row-color:#05427c7a;
-    --bg-glass:linear-gradient(to right bottom, rgba(255, 255, 255, .5), rgba(255, 255, 255, 0.2))
+    --bg-glass:linear-gradient(to right bottom, rgba(255, 255, 255, .5), rgba(255, 255, 255, 0.2));
     --row-text-color : #d4d7daef;
+    --contrast-color : var(--row-color);
 }
 
 body{
@@ -29,11 +30,11 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-    background: var(--bg-glass);
+    background: var(--row-text-color);
 }
   
 body::-webkit-scrollbar-thumb {
-    background:var(--bg-main);
+    background:var(--row-color);
 }
 
 
@@ -74,6 +75,9 @@ main{
     border-width: 0.5vh;
     border-color: var(--row-text-color);
 }
+#contrast{
+    color : var(--contrast-color);
+}
 
 .row{
     background-color: var(--row-color);
@@ -98,17 +102,6 @@ main{
     background-color: var(--bg-primary);
     cursor: pointer;
 }
-* {
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial;
-    margin: 0 auto; /* Center website */
-    max-width: 800px; /* Max width */
-    padding: 20px;
-  }
-  
   .heading {
     font-size: 25px;
     margin-right: 25px;
@@ -121,17 +114,17 @@ main{
   .checked {
     color: orange;
   }
-  
+  s
   /* Three column layout */
   .side {
-    float: left;
+    text-align: left;
     width: 15%;
     margin-top: 10px;
   }
   
   .middle {
-    float: left;
-    width: 70%;
+    text-align: center;
+    width: 100%;
     margin-top: 10px;
   }
   
