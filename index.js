@@ -97,13 +97,14 @@ const URL="http://api.endlessmedical.com/v1/dx";
 
 
 
-const clientAge=(document.getElementById("clientAge")).value;
+/*const clientAge=(document.getElementById("clientAge")).value;
 const submitButton=document.querySelector("#submitButton");
 
 submitButton.addEventListener("click", ()=>{
     //analyze the whole shits
 
 })
+*/
 
 
 /*
@@ -122,7 +123,39 @@ function getValue(obj){
     })
 
 }
+
+
 */
+let id;
+getID();
+
+function getID(){;
+    jQuery.ajax({
+        url:`http://api.endlessmedical.com/v1/dx/InitSession`,
+        success:function(res){
+            id=res.SessionID;
+            console.log(id);
+            AcceptTermsOfUse();
+        },
+        error:console.log("penis")
+    })
+}
+
+function AcceptTermsOfUse(){
+    jQuery.ajax({
+        type:"POST",
+        url:`http://api.endlessmedical.com/v1/dx/AcceptTermsOfUse?SessionID=${id}&passphrase=I%20have%20read,%20understood%20and%20I%20accept%20and%20agree%20to%20comply%20with%20the%20Terms%20of%20Use%20of%20EndlessMedicalAPI%20and%20Endless%20Medical%20services.%20The%20Terms%20of%20Use%20are%20available%20on%20endlessmedical.com`,
+        success:function(res){
+            console.log("success");
+            console.log(res);
+            //getSource(res.results[0].id);
+        },
+        error:console.log("penis")
+    })
+
+}
+
+
 function getValue(obj){
     //value fof the object
     const objectValue=obj.value;
