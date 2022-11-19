@@ -6,13 +6,14 @@
     --text-secondary: #ececec;
     --bg-primary:#23232e;
     --bg-secondary:#141418;
+    --bg-main:linear-gradient(to top right, #05538b,#30a4c8);
     --transition-speed:600ms;
 
 }
 
 body{
     color:black;
-    background: linear-gradient(to top right, #05538b,#30a4c8);
+    background: var(--bg-main);
     margin:0;
     padding:0;
     height: 100vh; /*do not change*/
@@ -33,6 +34,7 @@ body::-webkit-scrollbar-thumb {
 
 
 main{
+
     margin-left: 5rem;
     padding: 1rem;
 }
