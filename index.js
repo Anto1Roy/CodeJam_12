@@ -90,42 +90,11 @@ practiceButton.addEventListener("click", ()=>{
 
 
 
-const URL="http://api.endlessmedical.com/v1/dx";
 
 
 //This function is called when the user submits its symptoms
 
 
-
-/*const clientAge=(document.getElementById("clientAge")).value;
-const submitButton=document.querySelector("#submitButton");
-
-submitButton.addEventListener("click", ()=>{
-    //analyze the whole shits
-
-})
-*/
-
-
-/*
-function getValue(obj){
-    //value fof the object
-    const objectValue=obj.value;
-    //id of the object 
-    const objectID=obj.id;
-    jQuery.ajax({
-        url:`http://api.endlessmedical.com/v1/dx/UpdateFeature?SessionID=${id}&name=${objectID}&value=${objectValue}`,
-        success:function(res){
-            console.log(res);
-            //getSource(res.results[0].id);
-        },
-        error:console.log("penis")
-    })
-
-}
-
-
-*/
 let id;
 getID();
 
@@ -173,6 +142,27 @@ function getValue(obj){
     })
 
 }
+
+/*
+analyze = requests.get(f"{URL}/Analyze?SessionID={id}")
+    for i in range(0,5):
+        print(eval(analyze.content)["Diseases"][i])
+    tests = requests.get(f"{URL}/GetSuggestedTests?SessionID={id}")
+*/
+
+const submitButton=document.querySelector("#SubmitButton");
+//Analyze the different symptoms to output the diagnostic
+submitButton.addEventListener("click", ()=>{
+    jQuery.ajax({
+        url:`http://api.endlessmedical.com/v1/dx/UpdateFeature?SessionID=${id}`,
+        success:function(res){
+            console.log("we lit buddy i have cancer");
+            console.log(res);
+
+        },
+        error:console.log("penis")
+    });
+})
 
 
 
