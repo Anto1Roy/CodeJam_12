@@ -1,0 +1,267 @@
+:root{
+    font-size: 16px;
+    font-family: 'Open Sans';
+
+    --text-primary:#b6b6b6;
+    --text-secondary: #ececec;
+    --bg-primary:#23232e;
+    --bg-secondary:#141418;
+    --transition-speed:600ms;
+
+}
+
+body{
+    color:black;
+    background-color: white;
+    margin:0;
+    padding:0;
+}
+
+body::-webkit-scrollbar {
+    width:0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: #1e1e24;
+}
+  
+body::-webkit-scrollbar-thumb {
+    background: #6649b8;
+}
+
+
+main{
+    margin-left: 5rem;
+    padding: 1rem;
+}
+
+.navbar{
+    width: 5rem;
+    height: 100vh;
+    position: fixed;
+    background-color: var(--bg-primary);
+    transition: width 600ms ease;
+}
+
+.navbar-nav{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;  
+}
+
+
+.nav-item{
+    fill: var(--text-primary); 
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.nav-item:last-child{
+    margin-top: auto;
+    
+}
+
+
+.nav-link{
+    display:flex;
+    align-items: center;
+    background-color: var(--bg-primary);
+    height: 5rem;
+    border-radius: 10px;
+    border: 3px solid;
+    border-color: var(--bg-primary);
+    width: 95%;
+    cursor: pointer;
+    transition: var(--transition-speed);
+ 
+}
+
+.link-text{
+    display: none;
+    margin-left: 1rem;
+    color: var(--text-primary);
+    font-size:larger;
+    font-weight: bolder;
+    transition: var(--transition-speed);
+   
+}
+
+
+.nav-link svg{
+    width: 2rem;
+    min-width: 2rem;
+    margin-left: auto;
+    margin-right: 5%;
+    
+}
+
+
+
+.navbar:hover{
+    width: 16rem;
+}
+
+.navbar:hover .link-text{
+    display: block;
+      
+}
+
+
+
+.nav-link:hover{
+    background-color: var(--bg-secondary);
+    fill: white;
+}
+
+.nav-link:hover .link-text{
+    color: var(--text-secondary);
+}
+
+
+
+
+
+
+.nav-item:first-child{
+    background-color:var(--bg-secondary);
+}
+
+.nav-item:first-child svg{
+    transform: rotate(0deg);
+    transition: var(--transition-speed)
+
+}
+
+
+#firstButton{
+    background-color: var(--bg-secondary);
+    border-color: var(--bg-secondary);
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 1rem;
+    letter-spacing: 0.3ch;
+    width: 100%;
+    cursor:auto;
+}
+
+
+.logo-text{
+  transition: var(--transition-speed);
+}
+
+.navbar:hover .nav-item:first-child svg {
+    transform: rotate(-180deg);
+}
+
+
+/*for small screens, like an iphone*/
+@media only screen and (max-width:600px) {
+    .navbar{
+        bottom: 0;
+        width: 100vw;
+        height: 5rem;
+
+    }
+    
+    
+    .navbar:hover{
+        width: 100%;
+    }
+
+    .navbar:hover .link-text{
+        display: none;
+    }
+
+    .nav-item:first-child{
+        display: none;
+    }
+
+    .nav-link:hover{
+        background-color: var(--bg-primary);
+    }
+
+    .navbar-nav{
+        flex-direction: row;
+    }
+
+    .nav-link{
+        justify-content: center;
+        height: 2rem;
+        border: auto;
+    }
+
+    main{
+        margin: 0;
+    }
+}
+
+
+
+/*for large screens*/
+@media only screen and (min-width:600px) {
+    .navbar{
+        top: 0;
+        width: 5rem;
+        height: 100vh;
+    }
+
+    .navbar:hover{
+        width: 16rem;
+    }
+
+    .navbar:hover .link-text{
+        display: inline;
+        transition: var(--transition-speed);
+    }
+}
+
+
+/*Theme logic
+ would like to have hot
+ would like to have cold
+ would like to have shrek
+ */
+
+ .hot{
+    --text-primary: #523715;
+    --text-secondary: #e6ceac;
+    --bg-primary: #f0b659;
+    --bg-secondary: #d19534;
+ }
+
+ .cold{
+    --text-primary: #1a4152;
+    --text-secondary: #3e6f85;
+    --bg-primary: #74d5e8;
+    --bg-secondary: #38bed9;
+ }
+
+ .shrek{
+    --text-primary: #1c3625;
+    --text-secondary: #b0d1ba;
+    --bg-primary: #3d8f55;
+    --bg-secondary: #088a2e;
+ }
+
+ #themeIcon{
+    display: none;
+ }
+
+ .hot #sunnyIcon{
+    display: block;
+ }
+
+ .cold #coldIcon{
+    display: block;
+ }
+
+ .shrek #shrekIcon{
+    display: block;
+
+ }
