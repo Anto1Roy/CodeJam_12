@@ -85,3 +85,71 @@ practiceButton.addEventListener("click", ()=>{
     libraryDiv.style.display="block";
     myVar=libraryDiv;
 });
+
+
+
+
+
+const URL="http://api.endlessmedical.com/v1/dx";
+
+
+//This function is called when the user submits its symptoms
+
+
+
+const clientAge=(document.getElementById("clientAge")).value;
+const submitButton=document.querySelector("#submitButton");
+
+submitButton.addEventListener("click", ()=>{
+    //analyze the whole shits
+
+})
+
+
+/*
+function getValue(obj){
+    //value fof the object
+    const objectValue=obj.value;
+    //id of the object 
+    const objectID=obj.id;
+    jQuery.ajax({
+        url:`http://api.endlessmedical.com/v1/dx/UpdateFeature?SessionID=${id}&name=${objectID}&value=${objectValue}`,
+        success:function(res){
+            console.log(res);
+            //getSource(res.results[0].id);
+        },
+        error:console.log("penis")
+    })
+
+}
+*/
+function getValue(obj){
+    //value fof the object
+    const objectValue=obj.value;
+    //id of the object 
+    const objectID=obj.id;
+    jQuery.ajax({
+        type:"POST",
+        url:`http://api.endlessmedical.com/v1/dx/UpdateFeature?SessionID=${id}&name=${objectID}&value=${objectValue}`,
+        success:function(res){
+            console.log("success");
+            console.log(res);
+            //getSource(res.results[0].id);
+        },
+        error:console.log("penis")
+    })
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
