@@ -79,53 +79,70 @@
     <main>
 
         <div class="appDiv" id="profileDiv">
-            <h1> Profile division of the program</h1>
-            Age: <input type="number" id="clientAge" min="0" max="120">
-            
+            <h1> Patient's Symptoms</h1>
+            <li>
+            Age: <input class="row" type="number" id="Age" min="0" max="120">
+            </li>
             <br>
-            
-            <label for="clientGender"> Gender: </label>
+            <li>
+            <label class="row" for="clientGender"> Gender: </label>
             <select name="possibleGenders" id="Gender">
             <option value="Male">Male</option>
             <option value="Male">Female</option>
             <option value="Male">Other</option>
             <option value="Male">Helicopter</option>
             </select>
+            </li>
             
             <br>
-
-            <label for="clientCough"> Cough Level: </label>
+            <li>
+            <label class="row" for="clientCough"> Cough Level: </label>
             <select name="coughlevel" id="SeverityCough">
             <option value="0">No Cough</option>
             <option value="2">Mild Cough</option>
             <option value="5">Moderate Cough</option>
             <option value="8">Severe Cough</option>
             </select>
-
+            </li>
+            
             <br>
-            Temperature: <input type="number" step="0.1" id="clientTemp" min="95" max="109">
+            <li>
+            Temperature: <input class="row" type="number" step="0.1" id="clientTemp" min="95" max="109">
+            </li>
             <br>
-            Heart Rate: <input type="number" id="clientRate" min="0" max="220">
+            <li>
+            Heart Rate: <input class="row" type="number" id="clientRate" min="0" max="220">
+            </li>
             <br>
-
-            <label for="clientHeadache"> Are you experiencing headaches, if so how intense are they? </label>
+            
+            <li>
+            <label class="row" for="clientHeadache"> Are you experiencing headaches, if so how intense are they? </label>
             <select name="headacheLevel" id="HeadacheIntensity">
             <option value="0">No headaches. </option>
             <option value="2">Small headaches.</option>
             <option value="5">Mild headaches.</option>
             <option value="8">Severe headaches.</option>
             </select>
+            </li>
             
             <br>
 
             <li>
-                <label for="clientThroat"> Do you have a sore throat? </label>
-                <select name="throatlevel" id="SoreThroatROS">
-                <option value="No">No Pain</option>
-                <option value="Yes">Mild pain or pain has appeared just recently</option>
-                </select>
-                </li>
+            <label class="row" for="clientThroat"> Do you have a sore throat? </label>
+            <select name="throatlevel" id="SoreThroatROS">
+            <option value="No">No Pain</option>
+            <option value="Yes">Mild pain or pain has appeared just recently</option>
+            </select>
+            </li>
             <br>
+
+            <li>
+                <label class="row" for="Nausea"> Are you experiencing nausea? </label>
+                <select name="Nausea" id="Nausea">
+                    <option value="No">No</option>
+                    <option value="Yes">Yes</option>
+                </select>
+            </li>
 
 
 
