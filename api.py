@@ -49,7 +49,7 @@ def main():
     sex = 0
     sexactive = requests.post(f"{URL}/UpdateFeature?SessionID={id}&name=SexActive&value={sex}")
     exposure = 0
-    covid = requests.post(f"{URL}/UpdateFeature?SessionID={id}&name=ExposureToCovid&value={covid}")
+    covid = requests.post(f"{URL}/UpdateFeature?SessionID={id}&name=ExposureToCovid&value={exposure}")
     diarrhea = 0
     dia = requests.post(f"{URL}/UpdateFeature?SessionID={id}&name=ChronicDiarrheaSx&value={diarrhea}")
     swallow = 0 
