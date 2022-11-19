@@ -69,7 +69,7 @@ const libraryDiv=document.querySelector("#libraryDiv");
 
 
 //BUTTONS
-const profileButton=document.querySelector("#profileButton");
+const profileButton=document.querySelector("#diagnosticButton");
 const notesButton=document.querySelector("#notesButton");
 const libraryButton=document.querySelector("#libraryButton");
 
