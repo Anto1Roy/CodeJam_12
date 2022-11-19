@@ -11,8 +11,10 @@ def main():
 
     cough_lvl = 1
     cough = requests.post(f"{URL}/UpdateFeature?SessionID={id}&name=SeverityCough&value={cough_lvl}")
+    
     temp_lvl = 1
     temp = requests.post(f"{URL}/UpdateFeature?SessionID={id}&name=Temp&value={temp_lvl}")
+    
     heart_rate = 1
     heart = requests.post(f"{URL}/UpdateFeature?SessionID={id}&name=HeartRate&value={heart_rate}")
     headache_lvl = 0
