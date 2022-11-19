@@ -54,9 +54,9 @@ themeButton.addEventListener("click", toggleTheme);
 //given a meal, would return a list of ingredients, link to recipe, picture
 const profileDiv=document.querySelector("#profileDiv");
 //given some ingredients that we have in the fridge, would return list of recipes that we could do
-const notesDiv=document.querySelector("#notesDiv");
+const notesDiv=document.querySelector("#DiagnosisDiv");
 //given the ingredients on sale in the grocery store, would return a list of recipes containing those elements
-const libraryDiv=document.querySelector("#libraryDiv");
+const libraryDiv=document.querySelector("#TestDiv");
 
 
 //BUTTONS
