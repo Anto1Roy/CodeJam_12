@@ -100,7 +100,6 @@ main{
 }
 
 
-
 .navbar:hover{
     width: 16rem;
 }
@@ -120,9 +119,6 @@ main{
 .nav-link:hover .link-text{
     color: var(--text-secondary);
 }
-
-
-
 
 
 
