@@ -68,6 +68,11 @@ main{
     margin-left : 10%;
     
 }
+#SubmitButton:hover{
+    background-color: var(--bg-primary);
+
+
+}
 
 
 .navbar{
