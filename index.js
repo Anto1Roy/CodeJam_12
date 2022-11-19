@@ -60,9 +60,9 @@ const libraryDiv=document.querySelector("#libraryDiv");
 
 
 //BUTTONS
-const diagnosticButton=document.querySelector("#diagnosticButton");
-const whereToButton=document.querySelector("#whereToButton");
-const practiceButton=document.querySelector("#practiceButton");
+const diagnosticButton=document.querySelector("#SymptomsButton");
+const whereToButton=document.querySelector("#DiagnosticButton");
+const practiceButton=document.querySelector("#TestButton");
 
 //this is a variable so that hide the divs we do not need anymore
 let myVar=profileDiv;
