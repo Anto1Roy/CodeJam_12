@@ -12,9 +12,11 @@
 
 body{
     color:black;
-    background-color: blueviolet;
+    background: linear-gradient(to top right, #05538b,#30a4c8);
     margin:0;
     padding:0;
+    height: 100vh; /*do not change*/
+    background-repeat: no-repeat; /*thx*/
 }
 
 body::-webkit-scrollbar {
