@@ -6,8 +6,10 @@
     --text-secondary: #ececec;
     --bg-primary:#23232e;
     --bg-secondary:#141418;
-    --bg-main:linear-gradient(to top right, #05538b,#30a4c8);
+    --bg-main:linear-gradient(to top right, #05437c,#1475ac);
     --transition-speed:600ms;
+    --row-color:#05427c7a;
+    --bg-glass:linear-gradient(to right bottom, rgba(255, 255, 255, .5), rgba(255, 255, 255, 0.2))
 
 }
 
@@ -60,7 +62,7 @@ main{
     background-color: var(--bg-main);
 }
 .row{
-    background-color: rgba(255, 255, 255, 0.095);
+    background-color: var(--row-color);
     position: relative;
     min-width: 80%;
     max-width: 90%;
@@ -157,8 +159,6 @@ main{
     display: block;
       
 }
-
-
 
 .nav-link:hover{
     background-color: var(--bg-secondary);
@@ -277,19 +277,25 @@ main{
  */
 
  .hot{
+    color:#d4d7daef;
+    --row-color:#05427c7a;
+    --bg-glass:linear-gradient(to right bottom, rgba(255, 255, 255, .5), rgba(255, 255, 255, 0.2))
     --text-primary: white;
     --text-secondary: white;
     --bg-primary: #05437c;
     --bg-secondary:#1475ac;
-    --bg-main: linear-gradient(to top right, #05538b,#30a4c8);
+    --bg-main: linear-gradient(to top right, #05437c,#05538b);
  }
 
  .cold{
+    color: #05427cf6;
+    --bg-glass:linear-gradient(to right bottom, #07437bf5, #05427ce0);
+    --row-color:#7cabd79a;
     --text-primary: #1a4152;
     --text-secondary: #3e6f85;
     --bg-primary: #74d5e8;
     --bg-secondary: #38bed9; 
-    --bg-main: linear-gradient(to top right, #05538b,#0a689e);
+    --bg-main: linear-gradient(to top right, #428dd3a8,#1474ac81);
  }
 
 
