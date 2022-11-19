@@ -61,36 +61,36 @@ themeButton.addEventListener("click", toggleTheme);
 
 //DIV
 //given a meal, would return a list of ingredients, link to recipe, picture
-const listDiv=document.querySelector("#listDiv");
+const profileDiv=document.querySelector("#profileDiv");
 //given some ingredients that we have in the fridge, would return list of recipes that we could do
-const fridgeDiv=document.querySelector("#fridgeDiv");
+const notesDiv=document.querySelector("#notesDiv");
 //given the ingredients on sale in the grocery store, would return a list of recipes containing those elements
-const healthyDiv=document.querySelector("#healthyDiv");
+const libraryDiv=document.querySelector("#libraryDiv");
 
 
 //BUTTONS
-const listButton=document.querySelector("#listButton");
-const fridgeButton=document.querySelector("#fridgeButton");
-const healthyButton=document.querySelector("#healthyButton");
+const profileButton=document.querySelector("#profileButton");
+const notesButton=document.querySelector("#notesButton");
+const libraryButton=document.querySelector("#libraryButton");
 
 //this is a variable so that hide the divs we do not need anymore
-let myVar=listDiv;
+let myVar=profileDiv;
 
 
-listButton.addEventListener("click", ()=>{
+profileButton.addEventListener("click", ()=>{
     myVar.style.display="none";
-    listDiv.style.display="block";
-    myVar=listDiv;
+    profileDiv.style.display="block";
+    myVar=profileDiv;
 });
 
-fridgeButton.addEventListener("click", ()=>{
+notesButton.addEventListener("click", ()=>{
     myVar.style.display="none";
-    fridgeDiv.style.display="block";
-    myVar=fridgeDiv;
+    notesDiv.style.display="block";
+    myVar=notesDiv;
 });
 
-healthyButton.addEventListener("click", ()=>{
+libraryButton.addEventListener("click", ()=>{
     myVar.style.display="none";
-    healthyDiv.style.display="block";
-    myVar=healthyDiv;
+    libraryDiv.style.display="block";
+    myVar=libraryDiv;
 });
