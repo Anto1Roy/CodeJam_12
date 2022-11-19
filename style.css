@@ -70,8 +70,7 @@ main{
 }
 #SubmitButton:hover{
     background-color: var(--bg-primary);
-
-
+    cursor: pointer;
 }
 
 
