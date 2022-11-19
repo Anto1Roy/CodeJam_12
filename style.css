@@ -231,10 +231,10 @@ main{
  */
 
  .hot{
-    --text-primary: #523715;
-    --text-secondary: #e6ceac;
-    --bg-primary: #f0b659;
-    --bg-secondary: #d19534;
+    --text-primary: white;
+    --text-secondary: white;
+    --bg-primary: #05437c;
+    --bg-secondary:#1475ac;
  }
 
  .cold{
