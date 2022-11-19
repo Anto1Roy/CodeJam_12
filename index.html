@@ -80,27 +80,62 @@
 
         <div class="appDiv" id="profileDiv">
             <h1> Profile division of the program</h1>
+            <li>
             Age: <input type="number" id="clientAge" min="0" max="120">
-            
+            </li>
             <br>
-            
-            <label for="gender"> Gender: </label>
+            <li>
+            <label for="clientGender"> Gender: </label>
             <select name="possibleGenders" id="possibleGenders">
             <option value="Male">Male</option>
             <option value="Male">Female</option>
             <option value="Male">Other</option>
             <option value="Male">Helicopter</option>
             </select>
+            </li>
             
             <br>
-
-            <label for="cough"> Cough Level: </label>
+            <li>
+            <label for="clientCough"> Cough Level: </label>
             <select name="coughlevel" id="coughLevel">
-            <option value="Male">Male</option>
-            <option value="Male">Female</option>
-            <option value="Male">Other</option>
-            <option value="Male">Helicopter</option>
+            <option value="noCough">No Cough</option>
+            <option value="mildCough">Mild Cough</option>
+            <option value="moderateCough">Moderate Cough</option>
+            <option value="severeCough">Severe Cough</option>
             </select>
+            </li>
+
+            <br>
+            <li>
+            Temperature: <input type="number" step="0.1" id="clientTemp" min="95" max="109">
+            </li>
+            
+            <br>
+            <li>
+            Heart Rate: <input type="number" id="clientRate" min="0" max="220">
+            </li>
+            <br>
+
+            <li>
+            <label for="clientHeadache"> How long are the headaches lasting and how often they appear? </label>
+            <select name="headacheLevel" id="headacheLevel">
+            <option value="noData">Data unavailable (i.e: unable to access)</option>
+            <option value="mildHeadache">Headache episodes last between 15 minutes to 3 hours, and the episodes occur for 6-12 weeks in a stretch (in a "cluster"), before they not return for some time at all. </option>
+            <option value="moderateHeadache">Headache episodes last between 4 to 72 hours.</option>
+            <option value="severeHeadache">Headache episodes last betwen 30 minutes to 7 days, usually recur few times a month.</option>
+            <option value="firstHeadache">This is the first episode of headache, so its duration yet remains unknown.</option>
+            </select>
+            </li>
+            
+            <br>
+            <li>
+            <label for="clientThroat"> Sore throat: </label>
+            <select name="throatlevel" id="throatLevel">
+            <option value="noThroat">No Pain</option>
+            <option value="mildThroat">Mild pain or pain has appeared just recently</option>
+            </select>
+            </li>
+            <br>
 
 
 

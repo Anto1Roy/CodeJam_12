@@ -11,14 +11,19 @@ def main():
 
     cough_lvl = 1
     cough = requests.post(f"{URL}/UpdateFeature?SessionID={id}&name=SeverityCough&value={cough_lvl}")
+    
     temp_lvl = 1
     temp = requests.post(f"{URL}/UpdateFeature?SessionID={id}&name=Temp&value={temp_lvl}")
+    
     heart_rate = 1
     heart = requests.post(f"{URL}/UpdateFeature?SessionID={id}&name=HeartRate&value={heart_rate}")
+    
     headache_lvl = 0
     headache = requests.post(f"{URL}/UpdateFeature?SessionID={id}&name=HeadacheIntensity&value={headache_lvl}")
+    
     sore_throat = 0
     soreness = requests.post(f"{URL}/UpdateFeature?SessionID={id}&name=SoreThroatROS&value={sore_throat}")
+    
     nausea1 = 0
     nausea = requests.post(f"{URL}/UpdateFeature?SessionID={id}&name=Nausea&value={nausea1}")
     chestp = 0
@@ -44,7 +49,7 @@ def main():
     sex = 0
     sexactive = requests.post(f"{URL}/UpdateFeature?SessionID={id}&name=SexActive&value={sex}")
     exposure = 0
-    covid = requests.post(f"{URL}/UpdateFeature?SessionID={id}&name=ExposureToCovid&value={covid}")
+    covid = requests.post(f"{URL}/UpdateFeature?SessionID={id}&name=ExposureToCovid&value={exposure}")
     diarrhea = 0
     dia = requests.post(f"{URL}/UpdateFeature?SessionID={id}&name=ChronicDiarrheaSx&value={diarrhea}")
     swallow = 0 
