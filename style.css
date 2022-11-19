@@ -60,6 +60,14 @@ main{
     border-radius : 1vh;
 
 }
+#SubmitButton{
+    font-size: 14px;
+    position: relative;
+    max-width: 70%;
+    margin-right: 10%;
+    margin-left : 10%;
+    
+}
 
 
 .navbar{
