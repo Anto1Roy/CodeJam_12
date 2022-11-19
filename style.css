@@ -49,7 +49,10 @@ main{
 .appDiv{
     margin-left: 23vh;
     margin-top: 5vh;
+}
 
+.row{
+    background-color: white;
 
 }
 
