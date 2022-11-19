@@ -166,13 +166,17 @@ submitButton.addEventListener("click", ()=>{
         error:console.log("penis")
     });
 })
+
+
 const resultDiagnosisDiv=document.getElementById("resultDIagnosisDiv");
 function getDiagnostic(){
+    
     for(var i=0; i<diseases.length;i++){
-        console.log(JSON.stringify(diseases[i], null, 4));
+        Object.entries(diseases[i]).forEach(([key, value])=>{
+            console.log(value);
+        })
         resultDiagnosisDiv.innerHTML="<p>"+JSON.stringify(diseases[i], null, 4)+"</p>";
     }
-    resultDiagnosisDiv.innerHTML="<p>"+JSON.stringify(diseases, null, 4)+"</p>";
 
 
 }
