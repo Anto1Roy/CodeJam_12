@@ -154,7 +154,7 @@ const submitButton=document.querySelector("#SubmitButton");
 //Analyze the different symptoms to output the diagnostic
 submitButton.addEventListener("click", ()=>{
     jQuery.ajax({
-        url:`http://api.endlessmedical.com/v1/dx/UpdateFeature?SessionID=${id}`,
+        url:`http://api.endlessmedical.com/v1/dx/Analyze?SessionID=${id}`,
         success:function(res){
             console.log("we lit buddy i have cancer");
             console.log(res);
