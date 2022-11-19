@@ -137,8 +137,8 @@
             <li class="row">
                 <label for="Nausea"> Are you experiencing nausea? </label>
                 <select name="Nausea" id="Nausea" onchange=getValue(this)>
-                    <option value="No">No</option>
-                    <option value="Yes">Yes</option>
+                    <option value="2">No</option>
+                    <option value="4">Yes</option>
                 </select>
             </li>
             
@@ -309,7 +309,7 @@
             <div id="resultDIagnosisDiv"> </div>
 
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-                <span class="heading" id="contrast">List of Most Probable Disease: </span>
+                <span class="heading" id="contrast">Ranking of Most Probable Disease: </span>
                 <hr style="border:3px solid #f1f1f1">
 
                 <div class="row">
@@ -374,7 +374,7 @@
 
 
         <div class="appDiv" id="TestDiv" style="display:none;">
-            <h1> Suggested Tests to Confirm Your Disease </h1>
+            <h1 id="contrast"> Suggested Tests to Confirm Your Disease </h1>
             
         </div>
         
