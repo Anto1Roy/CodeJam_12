@@ -167,7 +167,7 @@ submitButton.addEventListener("click", ()=>{
         },
         error:console.log("penis")
     });
-    /*
+    
     jQuery.ajax({
         url:`http://api.endlessmedical.com/v1/dx/GetSuggestedTests?SessionID=${id}`,
         success:function(res2){
@@ -179,7 +179,7 @@ submitButton.addEventListener("click", ()=>{
         },
         error:console.log("penis")
     });
-    */
+    
     
 })
 
