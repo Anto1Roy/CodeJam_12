@@ -16,9 +16,10 @@ body{
     background: var(--bg-main);
     margin:0;
     padding:0;
-    height: 100vh; /*do not change*/
+    height: 90%; /*do not change*/
     background-repeat: no-repeat; /*thx*/
 }
+
 
 body::-webkit-scrollbar {
     width:0.25rem;
@@ -34,9 +35,22 @@ body::-webkit-scrollbar-thumb {
 
 
 main{
-
-    margin-left: 5rem;
+    background : linear-gradient(to right bottom, rgba(255, 255, 255, .5), rgba(255, 255, 255, 0.2));
+    position:static;
+    margin-left : 5rem;
+    margin-top : 5%;
+    margin-bottom : 5vh;
+    margin-right: 5rem;
+    min-height: 100vh;
     padding: 1rem;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+.appDiv{
+    margin-left: 23vh;
+    margin-top: 5vh;
+
+
 }
 
 .navbar{
