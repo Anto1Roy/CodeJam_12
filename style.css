@@ -246,12 +246,6 @@ main{
     --bg-secondary: #38bed9;
  }
 
- .shrek{
-    --text-primary: #1c3625;
-    --text-secondary: #b0d1ba;
-    --bg-primary: #3d8f55;
-    --bg-secondary: #088a2e;
- }
 
  #themeIcon{
     display: none;
@@ -265,10 +259,6 @@ main{
     display: block;
  }
 
- .shrek #shrekIcon{
-    display: block;
-
- }
 
  
  
