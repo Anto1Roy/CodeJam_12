@@ -13,5 +13,7 @@ def main():
     cough = requests.post(f"{URL}/UpdateFeature?SessionID={id}&name=SeverityCough&value={cough_lvl}")
     analyze = requests.get(f"{URL}/Analyze?SessionID={id}")
     print(eval(analyze.content)["Diseases"])
+
 if __name__ == '__main__':
+    print("suck my cock")
     main()
