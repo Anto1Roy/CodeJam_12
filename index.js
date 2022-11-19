@@ -155,7 +155,7 @@ let diseases;
 let tests;
 //Analyze the different symptoms to output the diagnostic
 submitButton.addEventListener("click", ()=>{
-    /*
+    
     jQuery.ajax({
         url:`http://api.endlessmedical.com/v1/dx/Analyze?SessionID=${id}`,
         success:function(res){
@@ -167,7 +167,7 @@ submitButton.addEventListener("click", ()=>{
         },
         error:console.log("penis")
     });
-    */
+    /*
     jQuery.ajax({
         url:`http://api.endlessmedical.com/v1/dx/GetSuggestedTests?SessionID=${id}`,
         success:function(res2){
@@ -179,6 +179,7 @@ submitButton.addEventListener("click", ()=>{
         },
         error:console.log("penis")
     });
+    */
     
 })
 
@@ -188,9 +189,10 @@ function getDiagnostic(){
     
     for(var i=0; i<diseases.length;i++){
         Object.entries(diseases[i]).forEach(([key, value])=>{
-            console.log(value);
+            var index=i+1;
+            document.getElementById(`disease${index}`).innerHTML=`${key}`;
+            document.getElementById(`percent${index}`).innerHTML=`${Math.round(value*100, 2)}`;
         })
-        resultDiagnosisDiv.innerHTML="<p>"+JSON.stringify(diseases[i], null, 4)+"</p>";
     }
 
 
