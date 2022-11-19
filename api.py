@@ -17,10 +17,13 @@ def main():
     
     heart_rate = 1
     heart = requests.post(f"{URL}/UpdateFeature?SessionID={id}&name=HeartRate&value={heart_rate}")
+    
     headache_lvl = 0
     headache = requests.post(f"{URL}/UpdateFeature?SessionID={id}&name=HeadacheIntensity&value={headache_lvl}")
+    
     sore_throat = 0
     soreness = requests.post(f"{URL}/UpdateFeature?SessionID={id}&name=SoreThroatROS&value={sore_throat}")
+    
     nausea1 = 0
     nausea = requests.post(f"{URL}/UpdateFeature?SessionID={id}&name=Nausea&value={nausea1}")
     chestp = 0
