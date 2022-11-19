@@ -10,8 +10,9 @@
     --bg-main:linear-gradient(to top right, #05437c,#1475ac);
     --transition-speed:600ms;
     --row-color:#05427c7a;
-    --bg-glass:linear-gradient(to right bottom, rgba(255, 255, 255, .5), rgba(255, 255, 255, 0.2))
+    --bg-glass:linear-gradient(to right bottom, rgba(255, 255, 255, .5), rgba(255, 255, 255, 0.2));
     --row-text-color : #d4d7daef;
+    --contrast-color : var(--row-color);
 }
 
 body{
@@ -29,11 +30,11 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-    background: var(--bg-glass);
+    background: var(--row-text-color);
 }
   
 body::-webkit-scrollbar-thumb {
-    background:var(--bg-main);
+    background:var(--row-color);
 }
 
 
@@ -73,6 +74,9 @@ main{
     background-color: var(--bg-main);
     border-width: 0.5vh;
     border-color: var(--row-text-color);
+}
+#contrast{
+    color : var(--contrast-color);
 }
 
 .row{
