@@ -107,7 +107,7 @@ function getID(){;
             console.log("we got the id");
             AcceptTermsOfUse();
         },
-        error:console.log("penis")
+        error:console.log("did not get ID")
     })
 }
 
@@ -119,7 +119,7 @@ function AcceptTermsOfUse(){
             console.log("success for the term of use");
             console.log(res);
         },
-        error:console.log("penis")
+        error:console.log("did not accept")
     })
 
 }
@@ -138,7 +138,7 @@ function getValue(obj){
             console.log(res);
             //getSource(res.results[0].id);
         },
-        error:console.log("penis")
+        error:console.log("did not post")
     })
 
 }
@@ -165,7 +165,7 @@ submitButton.addEventListener("click", ()=>{
             getDiagnostic();
 
         },
-        error:console.log("penis")
+        error:console.log("analyze api problem")
     });
     
     jQuery.ajax({
@@ -177,7 +177,7 @@ submitButton.addEventListener("click", ()=>{
             getTests();
 
         },
-        error:console.log("penis")
+        error:console.log("Test api problem")
     });
     
     
@@ -186,19 +186,20 @@ submitButton.addEventListener("click", ()=>{
 
 const resultDiagnosisDiv=document.getElementById("resultDIagnosisDiv");
 function getDiagnostic(){
-    
+    if (diseases.length<5){
+        //hide the result div
+
+    }
     for(var i=0; i<diseases.length;i++){
         if (i==5){
+            //unhide the result div, hide the standard div
             break;
         }
         Object.entries(diseases[i]).forEach(([key, value])=>{
-            
             document.getElementById(`disease${i+1}`).innerHTML=`${key}`;
             document.getElementById(`percent${i+1}`).innerHTML=`${parseFloat(value*100).toFixed(2)}%`;
         })
     }
-
-
 }
 
 
