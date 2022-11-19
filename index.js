@@ -188,10 +188,13 @@ const resultDiagnosisDiv=document.getElementById("resultDIagnosisDiv");
 function getDiagnostic(){
     
     for(var i=0; i<diseases.length;i++){
+        if (i==5){
+            break;
+        }
         Object.entries(diseases[i]).forEach(([key, value])=>{
-            var index=i+1;
-            document.getElementById(`disease${index}`).innerHTML=`${key}`;
-            document.getElementById(`percent${index}`).innerHTML=`${Math.round(value*100, 2)}`;
+            
+            document.getElementById(`disease${i+1}`).innerHTML=`${key}`;
+            document.getElementById(`percent${i+1}`).innerHTML=`${parseFloat(value*100).toFixed(2)}%`;
         })
     }
 
