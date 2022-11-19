@@ -113,14 +113,14 @@ main{
   s
   /* Three column layout */
   .side {
-    float: left;
+    text-align: left;
     width: 15%;
     margin-top: 10px;
   }
   
   .middle {
-    float: left;
-    width: 70%;
+    text-align: center;
+    width: 100%;
     margin-top: 10px;
   }
   
