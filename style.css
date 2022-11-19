@@ -251,13 +251,15 @@ main{
     --text-secondary: white;
     --bg-primary: #05437c;
     --bg-secondary:#1475ac;
+    --bg-main: linear-gradient(to top right, #05538b,#30a4c8);
  }
 
  .cold{
     --text-primary: #1a4152;
     --text-secondary: #3e6f85;
     --bg-primary: #74d5e8;
-    --bg-secondary: #38bed9;
+    --bg-secondary: #38bed9; 
+    --bg-main: linear-gradient(to top right, #05538b,#0a689e);
  }
 
 
