@@ -50,7 +50,15 @@ main{
     margin-left: 23vh;
     margin-top: 5vh;
 }
-
+.appDiv select{
+    background-color: #30a4c812;
+}
+.appDiv select:hover{
+    background-color: #74d5e8;
+}
+.appDiv input{
+    background-color: var(--bg-main);
+}
 .row{
     background-color: rgba(255, 255, 255, 0.095);
     position: relative;
@@ -60,6 +68,7 @@ main{
     border-radius : 1vh;
 
 }
+
 #SubmitButton{
     font-size: 14px;
     position: relative;
