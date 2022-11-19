@@ -1,6 +1,6 @@
 :root{
     font-size: 16px;
-    font-family: 'Courier New';
+    font-family: 'Open Sans';
 
     --text-primary:#b6b6b6;
     --text-secondary: #ececec;
@@ -12,7 +12,7 @@
 
 body{
     color:black;
-    background: linear-gradient(to right top, #1d8eb8,#aadfe0);
+    background-color: blueviolet;
     margin:0;
     padding:0;
 }
@@ -100,6 +100,7 @@ main{
 }
 
 
+
 .navbar:hover{
     width: 16rem;
 }
@@ -119,6 +120,9 @@ main{
 .nav-link:hover .link-text{
     color: var(--text-secondary);
 }
+
+
+
 
 
 
@@ -261,3 +265,7 @@ main{
     display: block;
 
  }
+
+ 
+ 
+

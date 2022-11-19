@@ -1,6 +1,3 @@
-//here is the logic/code for the different theme we are going to have
-
-//this is the button representing the theme
 const themeButton=document.getElementById("themeButton");
 
 
@@ -59,6 +56,10 @@ function toggleTheme(){
 
 themeButton.addEventListener("click", toggleTheme);
 
+
+//here is the logic for the different food applications
+
+
 //DIV
 //given a meal, would return a list of ingredients, link to recipe, picture
 const profileDiv=document.querySelector("#profileDiv");
@@ -69,29 +70,28 @@ const libraryDiv=document.querySelector("#libraryDiv");
 
 
 //BUTTONS
-const profileButton=document.querySelector("#diagnosticButton");
-const notesButton=document.querySelector("#whereToButton");
-const libraryButton=document.querySelector("#practiceButton");
+const diagnosticButton=document.querySelector("#diagnosticButton");
+const whereToButton=document.querySelector("#whereToButton");
+const practiceButton=document.querySelector("#practiceButton");
 
 //this is a variable so that hide the divs we do not need anymore
 let myVar=profileDiv;
 
 
-profileButton.addEventListener("click", ()=>{
+diagnosticButton.addEventListener("click", ()=>{
     myVar.style.display="none";
     profileDiv.style.display="block";
     myVar=profileDiv;
 });
 
-notesButton.addEventListener("click", ()=>{
+whereToButton.addEventListener("click", ()=>{
     myVar.style.display="none";
     notesDiv.style.display="block";
     myVar=notesDiv;
 });
 
-libraryButton.addEventListener("click", ()=>{
+practiceButton.addEventListener("click", ()=>{
     myVar.style.display="none";
     libraryDiv.style.display="block";
     myVar=libraryDiv;
 });
-
