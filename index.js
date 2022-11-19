@@ -151,19 +151,37 @@ analyze = requests.get(f"{URL}/Analyze?SessionID={id}")
 */
 
 const submitButton=document.querySelector("#SubmitButton");
+let diseases;
 //Analyze the different symptoms to output the diagnostic
 submitButton.addEventListener("click", ()=>{
     jQuery.ajax({
         url:`http://api.endlessmedical.com/v1/dx/Analyze?SessionID=${id}`,
         success:function(res){
             console.log("we lit buddy i have cancer");
-            console.log(res);
+            console.log(res.Diseases);
+            diseases=res.Diseases;
+            getDiagnostic();
 
         },
         error:console.log("penis")
     });
 })
 
+function getDiagnostic(){
+    for(var i=0; i<diseases.length;i++){
+        console.log(JSON.stringify(diseases[i], null, 4));
+        DiagnosisDiv.innerHTML="<p>"+JSON.stringify(diseases[i], null, 4)+"</p>";
+    }
+    DiagnosisDiv.innerHTML="<p>"+JSON.stringify(diseases, null, 4)+"</p>";
+
+
+}
+
+
+
+function getTests(){
+
+}
 
 
 
