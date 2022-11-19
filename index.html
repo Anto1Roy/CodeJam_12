@@ -96,30 +96,30 @@
             <li class="row">
                 <label for="clientCough"> Cough Level: </label>
                 <select name="coughlevel" id="SeverityCough" onchange=getValue(this)>
-                    <option value="0">No Cough</option>
-                    <option value="2">Mild Cough</option>
-                    <option value="5">Moderate Cough</option>
-                    <option value="8">Severe Cough</option>
+                    <option value="2">No Cough</option>
+                    <option value="3">Mild Cough</option>
+                    <option value="4">Moderate Cough</option>
+                    <option value="5">Severe Cough</option>
                 </select>
             </li>
             
             <br>
             <li class="row">
-                Temperature: <input type="number" step="0.1" id="Temp" min="95" max="109" onchange=getValue(this) oninput=getValue(this)>
+                Temperature (95-109): <input type="number" step="0.1" id="Temp" min="95" max="109" onchange=getValue(this) oninput=getValue(this)>
             </li>
             <br>
             <li class="row">
-                Heart Rate: <input type="number" id="HeartRate" min="0" max="220" onchange=getValue(this) oninput=getValue(this)>
+                Heart Rate (0-220): <input type="number" id="HeartRate" min="0" max="220" onchange=getValue(this) oninput=getValue(this)>
             </li>
             <br>
             
             <li class="row">
                 <label for="clientHeadache"> Are you experiencing headaches, if so how intense are they? </label>
                 <select name="headacheLevel" id="HeadacheIntensity" onchange=getValue(this)>
-                    <option value="0">No headaches. </option>
-                    <option value="2">Small headaches.</option>
-                    <option value="5">Mild headaches.</option>
-                    <option value="8">Severe headaches.</option>
+                    <option value="2">No headaches. </option>
+                    <option value="3">Small headaches.</option>
+                    <option value="4">Mild headaches.</option>
+                    <option value="5">Severe headaches.</option>
                 </select>
             </li>
             
@@ -128,8 +128,8 @@
             <li class="row">
                 <label for="clientThroat"> Do you have a sore throat? </label>
                 <select name="throatlevel" id="SoreThroatROS" onchange=getValue(this)>
-                    <option value="No">No Pain</option>
-                    <option value="Yes">Mild pain or pain has appeared just recently</option>
+                    <option value="2">No Pain</option>
+                    <option value="4">Mild pain or pain has appeared just recently</option>
                 </select>
             </li>
             <br>
@@ -147,10 +147,10 @@
             <li class="row">
                 <label for="chestpain"> Are you experiencing chest pain? </label>
                 <select name="chestpain" id="ChestPainSeverity" onchange=getValue(this)>
-                    <option value="0">No</option>
-                    <option value="2">Light chest pain</option>
-                    <option value="5">Mild chest pain</option>
-                    <option value="8">Severe chest pain</option>
+                    <option value="2">No</option>
+                    <option value="3">Light chest pain</option>
+                    <option value="4">Mild chest pain</option>
+                    <option value="5">Severe chest pain</option>
                 </select>     
             </li>
 
@@ -158,9 +158,10 @@
 
             <li class="row">
                 <label for="constipation"> Are you constipated? </label>
-                <select name="chestpain" id="ChestPainSeverity" onchange=getValue(this)>
-                    <option value="No">No</option>
-                    <option value="Yes">Yes</option>
+                <select name="constipation" id="Constipation" onchange=getValue(this)>
+                    <option value="2">No</option>
+                    <option value="3">Yes, recently</option>
+                    <option value="4">Yes, I have been constipated for more than a month.</option>
                 </select>     
             </li>
 
@@ -169,8 +170,8 @@
             <li class="row">
                 <label for="weightgain"> Have you experienced any unwanted weight gain? </label>
                 <select name="weightgain" id="WeightGain" onchange=getValue(this)>
-                    <option value="No">No</option>
-                    <option value="Yes">Yes</option>
+                    <option value="2">No</option>
+                    <option value="4">Yes</option>
                 </select>     
             </li>
 
@@ -179,8 +180,8 @@
             <li class="row">
                 <label for="weightloss"> Have you experienced any unwanted weight gain? </label>
                 <select name="weightloss" id="WeightLoss" onchange=getValue(this)>
-                    <option value="No">No</option>
-                    <option value="Yes">Yes</option>
+                    <option value="2">No</option>
+                    <option value="4">Yes</option>
                 </select>     
             </li>
 
@@ -189,8 +190,8 @@
             <li class="row">
                 <label for="fatigue"> Are you always tired? </label>
                 <select name="fatigue" id="GeneralizedFatigue" onchange=getValue(this)>
-                    <option value="No">No</option>
-                    <option value="Yes">Yes</option>
+                    <option value="2">No</option>
+                    <option value="3">Yes</option>
                 </select>     
             </li>
 
@@ -199,8 +200,8 @@
             <li class="row">
                 <label for="lossofsmell"> Is there a loss of smell? </label>
                 <select name="lossofsmell" id="LossOfSmell" onchange=getValue(this)>
-                    <option value="No">No</option>
-                    <option value="Yes">Yes</option>
+                    <option value="2">No</option>
+                    <option value="3">Yes</option>
                 </select>     
             </li>
 
@@ -209,17 +210,17 @@
             <li class="row">
                 <label for="lossoftaste"> Is there a loss of taste? </label>
                 <select name="lossoftaste" id="LossOfTaste" onchange=getValue(this)>
-                    <option value="No">No</option>
-                    <option value="Yes">Yes</option>
+                    <option value="2">No</option>
+                    <option value="3">Yes</option>
                 </select>     
             </li>
 
             <br>
             <li class="row">
                 <label for="nasal"> Any recent nasal congestion or runny nose? </label>
-                <select name="weightgain" id="WeightGain" onchange=getValue(this)>
-                    <option value="No">No</option>
-                    <option value="Yes">Yes</option>
+                <select name="nasal" id="RunnyNoseCongestion" onchange=getValue(this)>
+                    <option value="2">No</option>
+                    <option value="3">Yes</option>
                 </select>     
             </li>
 
@@ -228,8 +229,8 @@
             <li class="row">
                 <label for="dryeyes"> Do you have dry eyes? </label>
                 <select name="dryeyes" id="DryEyes" onchange=getValue(this)>
-                    <option value="No">No</option>
-                    <option value="Yes">Yes</option>
+                    <option value="2">No</option>
+                    <option value="3">Yes</option>
                 </select>     
             </li>
 
@@ -238,10 +239,10 @@
             <li class="row">
                 <label for="vomit"> How often do you vomit? </label>
                 <select name="vomit" id="Vomiting" onchange=getValue(this)>
-                    <option value="0">Never</option>
-                    <option value="2">Sometimes</option>
-                    <option value="5">Regularly</option>
-                    <option value="8">Very often</option>
+                    <option value="2">Never</option>
+                    <option value="3">Sometimes</option>
+                    <option value="4">Regularly</option>
+                    <option value="5">Very often</option>
                 </select>     
             </li>
 
@@ -250,8 +251,8 @@
             <li class="row">
                 <label for="sex"> Are you sexully active uWu? </label>
                 <select name="sex" id="SexActive" onchange=getValue(this)>
-                    <option value="No">No:(</option>
-                    <option value="Yes">Yes</option>
+                    <option value="2">No:(</option>
+                    <option value="4">Yes</option>
                 </select>     
             </li>
 
@@ -260,18 +261,18 @@
             <li class="row">
                 <label for="covid"> Have you been exposed to Covid in the last 14 days? </label>
                 <select name="covud" id="ExposureToCovid" onchange=getValue(this)>
-                    <option value="No">No</option>
-                    <option value="Yes">Yes</option>
+                    <option value="2">No</option>
+                    <option value="3">Yes</option>
                 </select>     
             </li>
 
             <br>
 
             <li class="row">
-                <label for="chronicdiarrhea"> Do you have chronic diahrrea? </label>
+                <label for="chronicdiarrhea"> Do you have any history of chronic diahrrea? </label>
                 <select name="poop" id="ChronicDiarrheaSx" onchange=getValue(this)>
-                    <option value="No">No</option>
-                    <option value="Yes">Yes</option>
+                    <option value="2">No</option>
+                    <option value="3">Yes</option>
                 </select>     
             </li>
 
@@ -280,8 +281,18 @@
             <li class="row">
                 <label for="swallowpain"> Is there pain when you swallow? </label>
                 <select name="swallow" id="SwallowPain" onchange=getValue(this)>
-                    <option value="No">No</option>
-                    <option value="Yes">Yes</option>
+                    <option value="2">No</option>
+                    <option value="3">Yes</option>
+                </select>     
+            </li>
+
+            <br>
+
+            <li class="row">
+                <label for="mood"> Any historic of decreased of depressed mood? </label>
+                <select name="mood" id="DecreasedMood" onchange=getValue(this)>
+                    <option value="2">No</option>
+                    <option value="3">Yes, I am sad</option>
                 </select>     
             </li>
 
