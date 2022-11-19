@@ -84,7 +84,7 @@
             
             <br>
             
-            <label for="gender"> Gender: </label>
+            <label for="clientGender"> Gender: </label>
             <select name="possibleGenders" id="possibleGenders">
             <option value="Male">Male</option>
             <option value="Male">Female</option>
@@ -94,13 +94,30 @@
             
             <br>
 
-            <label for="cough"> Cough Level: </label>
+            <label for="clientCough"> Cough Level: </label>
             <select name="coughlevel" id="coughLevel">
-            <option value="Male">Male</option>
-            <option value="Male">Female</option>
-            <option value="Male">Other</option>
-            <option value="Male">Helicopter</option>
+            <option value="noCough">No Cough</option>
+            <option value="mildCough">Mild Cough</option>
+            <option value="moderateCough">Moderate Cough</option>
+            <option value="severeCough">Severe Cough</option>
             </select>
+
+            <br>
+            Temperature: <input type="number" step="0.1" id="clientTemp" min="95" max="109">
+            <br>
+            Heart Rate: <input type="number" id="clientRate" min="0" max="220">
+            <br>
+
+            <label for="clientHeadache"> How long are the headaches lasting and how often they appear? </label>
+            <select name="headacheLevel" id="headacheLevel">
+            <option value="noData">Data unavailable (i.e: unable to access)</option>
+            <option value="mildHeadache">Headache episodes last between 15 minutes to 3 hours, and the episodes occur for 6-12 weeks in a stretch (in a "cluster"), before they not return for some time at all. </option>
+            <option value="moderateHeadache">Headache episodes last between 4 to 72 hours.</option>
+            <option value="severeHeadache">Headache episodes last betwen 30 minutes to 7 days, usually recur few times a month.</option>
+            <option value="firstHeadache">This is the first episode of headache, so its duration yet remains unknown.</option>
+            </select>
+            
+            <br>
 
 
 
