@@ -152,6 +152,10 @@ main{
   }
   
   /* Individual bars */
+  .bar-8 {width: 60%; height: 18px; background-color: #04AA6D;}
+  .bar-7 {width: 30%; height: 18px; background-color: #2196F3;}
+  .bar-6 {width: 10%; height: 18px; background-color: #00bcd4;}
+  
   .bar-5 {width: 60%; height: 18px; background-color: #04AA6D;}
   .bar-4 {width: 30%; height: 18px; background-color: #2196F3;}
   .bar-3 {width: 10%; height: 18px; background-color: #00bcd4;}
