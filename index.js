@@ -103,7 +103,7 @@ function AcceptTermsOfUse(){
         url:`http://api.endlessmedical.com/v1/dx/AcceptTermsOfUse?SessionID=${id}&passphrase=I%20have%20read,%20understood%20and%20I%20accept%20and%20agree%20to%20comply%20with%20the%20Terms%20of%20Use%20of%20EndlessMedicalAPI%20and%20Endless%20Medical%20services.%20The%20Terms%20of%20Use%20are%20available%20on%20endlessmedical.com`,
         success:function(res){
             console.log("success for the term of use");
-            console.log(res);
+            
         },
         error:console.log("did not accept")
     })
@@ -161,9 +161,24 @@ submitButton.addEventListener("click", ()=>{
         },
         error:console.log("Test api problem")
     });
+
+    
+    
     
     
 })
+
+function popup(){
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+    setTimeout(hide, 5000);
+}
+function hide(){
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("hide");
+
+}
+
 
 
 const resultDiagnosisDiv=document.getElementById("resultDiagnosisDiv");
@@ -173,9 +188,9 @@ function getDiagnostic(){
     if (diseases.length<5){
         resultDiagnosisDiv.style.display="none";
         defaultResult.style.display="block";
-        window.alert("You are one healthy beauty! You can allow yourself to let loose; drink beer, smoke a cigarette, and who knows you can even do drugs ;)");
-
-        
+        document.getElementById("myPopup").innerHTML="You are one healthy beauty! You can allow yourself to let loose!";
+        popup();
+        //window.alert("You are one healthy beauty! You can allow yourself to let loose; drink beer, smoke a cigarette, and who knows you can even do drugs ;)");
 
     }
     let bar=5;
@@ -184,7 +199,10 @@ function getDiagnostic(){
             //unhide the result div, hide the standard div
             resultDiagnosisDiv.style.display="block";
             defaultResult.style.display="none";
-            window.alert("Ouff you have been lacking...ever thought about eating a fruit once in a while? Go see your diagnostic and specialists you should see!");
+            document.getElementById("myPopup").innerHTML="Ouff you have been lacking...ever thought about eating a fruit once in a while? Go see your diagnostic, and the specialists you should consult!";
+            popup();
+            //window.alert("Ouff you have been lacking...ever thought about eating a fruit once in a while? Go see your diagnostic and specialists you should see!");
+            
             break;
         }
         Object.entries(diseases[i]).forEach(([key, value])=>{
