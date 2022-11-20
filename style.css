@@ -77,6 +77,9 @@ main{
     border-width: 0.5vh;
     border-color: var(--row-text-color);
 }
+.appDiv input:hover{
+    background-color: #74d5e8;
+}
 #contrast{
     color : var(--contrast-color);
 }
