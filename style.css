@@ -192,10 +192,48 @@ main{
         height: 150px;
     }
 }
-.fireworks {
+/*
+@keyframes fireworks2 {
+    0%{
+        transform: translateY(80vh);
+    }
+   
+    50%{
+        width: 5px;
+        height: 5px;
+    }
+    80%{
+       opacity: 100%;
+    }
+    100%{
+        
+        opacity: 0%;
+        width: 300px;
+        height: 300px;
+    }
+}
+@keyframes fireworks3 {
+    0%{
+        transform: translateY(30vh);
+    }
+   
+    50%{
+        width: 5px;
+        height: 5px;
+    }
+    80%{
+       opacity: 100%;
+    }
+    100%{
+        opacity: 0%;
+        width: 200px;
+        height: 200px;
+    }
+}*/
+.fireworks1,
+.fireworks2,
+.fireworks3 {
     position:absolute;
-    top: 50%;
-    left:50%;
     background-image: radial-gradient(yellow,yellow),
     radial-gradient(red,red),
     radial-gradient(pink,pink),
@@ -219,7 +257,24 @@ main{
     transform: translate(-50% -50%);
     background-size: 5px 5px;
     background-repeat: no-repeat;
+}
+.fireworks1 {
+    bottom : 30%;
+    right : 30%;
+    animation: fireworks 3s infinite;
+    animation-delay: 0.5s;
+}
+.fireworks2 {
+    bottom : 30%;
+    left : 30%;
+    animation: fireworks 3s infinite;
+    animation-delay: 1s;
+}
+.fireworks3 {
+    bottom : 30%;
+    right : 50%;
     animation: fireworks 2s infinite;
+    animation-delay: 0.6s;
 }
 
 
