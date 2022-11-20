@@ -283,6 +283,28 @@
                     <option value="4">Yes, I have pain in the anus.</option>
                 </select>     
             </li>
+            
+            <br>
+
+            <li class="row">
+                <label for="prostate"> Is there a history of prostate cancer? </label>
+                <select name="prostate" id="PMHXProstateCancer" onchange=getValue(this)>
+                    <option value="2">No</option>
+                    <option value="3">Yes</option>
+                </select>     
+            </li>
+
+            <br>
+
+            <li class="row">
+                <label for="stones"> Is there a history of bile or gall stones? </label>
+                <select name="stones" id="PMHXVGallStones" onchange=getValue(this)>
+                    <option value="2">No</option>
+                    <option value="3">Yes</option>
+                </select>     
+            </li>
+
+
 
             <br>
 
@@ -307,7 +329,7 @@
             <br>
 
             <li class="row">
-                <label for="mood"> Any historic of decreased of depressed mood? </label>
+                <label for="mood"> Any history of decreased of depressed mood? </label>
                 <select name="mood" id="DecreasedMood" onchange=getValue(this)>
                     <option value="2">No</option>
                     <option value="3">Yes, I am sad</option>
@@ -315,6 +337,17 @@
             </li>
 
             <br>
+
+            <li class="row">
+                <label for="depression"> Any past history of medical depression? </label>
+                <select name="depression" id="PMHXDepression" onchange=getValue(this)>
+                    <option value="2">No</option>
+                    <option value="3">Yes</option>
+                </select>     
+            </li>
+
+            <br>
+
 
             <button class="row" id="SubmitButton">Submit Symptoms</button>
 
