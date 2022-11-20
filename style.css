@@ -112,6 +112,10 @@ main{
     background-color: var(--bg-primary);
     cursor: pointer;
 }
+#SubmitButton:active{
+    transform: scale(0.90);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
 
   .heading {
     font-size: 25px;
@@ -477,11 +481,6 @@ main{
 }
 
 
-/*Theme logic
- would like to have hot
- would like to have cold
- would like to have shrek
- */
 
  .hot{
     --row-text-color:#b6cce1ef;
