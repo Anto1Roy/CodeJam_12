@@ -194,6 +194,7 @@ function getDiagnostic(){
         defaultResult.style.display="block";
 
     }
+    let bar=5;
     for(var i=0; i<diseases.length;i++){
         if (i==5){
             //unhide the result div, hide the standard div
@@ -205,7 +206,9 @@ function getDiagnostic(){
         Object.entries(diseases[i]).forEach(([key, value])=>{
             document.getElementById(`disease${i+1}`).innerHTML=`${key}`;
             document.getElementById(`percent${i+1}`).innerHTML=`${parseFloat(value*100).toFixed(2)}%`;
+            document.querySelector(`.bar-${bar}`).style.width=String(parseFloat(value*100).toFixed(2))+"%";
         })
+        bar-=1;
     }
 }
 
