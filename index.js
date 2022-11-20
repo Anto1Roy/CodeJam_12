@@ -217,7 +217,7 @@ function getDiagnostic(){
 const defaultResultSpecialization=document.getElementById("defaultResultSpecialization");
 const resultSpecialistDiv=document.getElementById("resultSpecialistDiv");
 function getTests(){
-    if (tests.length<5){
+    if (tests.length<3){
         resultSpecialistDiv.style.display="none";
         defaultResultSpecialization.style.display="block";
 
