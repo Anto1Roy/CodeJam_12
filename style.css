@@ -172,7 +172,55 @@ main{
       display: none;
     }
   }
-
+/* fireworks yeah */
+@keyframes fireworks {
+    0%{
+        transform: translateY(50vh);
+    }
+   
+    50%{
+        width: 5px;
+        height: 5px;
+    }
+    80%{
+       opacity: 100%;
+    }
+    100%{
+        
+        opacity: 0%;
+        width: 150px;
+        height: 150px;
+    }
+}
+.fireworks {
+    position:absolute;
+    top: 50%;
+    left:50%;
+    background-image: radial-gradient(yellow,yellow),
+    radial-gradient(red,red),
+    radial-gradient(pink,pink),
+    radial-gradient(purple,purple),
+    radial-gradient(blue,blue),
+    radial-gradient(rgba(0, 255, 170, 0.84),rgba(0, 255, 170, 0.84)),
+    radial-gradient(rgb(124, 22, 179),rgb(128, 17, 171)),
+    radial-gradient(yellow,yellow),
+    radial-gradient(red,red),
+    radial-gradient(pink,pink),
+    radial-gradient(purple,purple),
+    radial-gradient(blue,blue),
+    radial-gradient(rgba(0, 255, 170, 0.84),rgba(0, 255, 170, 0.84)),
+    radial-gradient(rgb(124, 22, 179),rgb(128, 17, 171));
+    background-position: 30% 90%, 0% 50%, 100% 10%, 10% 0%, 30% 30%,
+    50% 10%, 40% 70%, 70% 30%, 100% 20%, 10% 70%, 50% 50%, 20% 85%,
+    80% 80%, 0% 25%;
+    width: 5px;
+    height: 5px;
+    
+    transform: translate(-50% -50%);
+    background-size: 5px 5px;
+    background-repeat: no-repeat;
+    animation: fireworks 2s infinite;
+}
 
 
 .navbar{
