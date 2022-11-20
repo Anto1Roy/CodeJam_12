@@ -199,6 +199,7 @@ function getDiagnostic(){
             //unhide the result div, hide the standard div
             resultDiagnosisDiv.style.display="block";
             defaultResult.style.display="none";
+            window.alert("You are dying looser");
             break;
         }
         Object.entries(diseases[i]).forEach(([key, value])=>{
