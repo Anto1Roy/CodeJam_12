@@ -78,6 +78,9 @@ main{
 #contrast{
     color : var(--contrast-color);
 }
+#defaultResult{
+    color : var(--contrast-color);
+}
 
 .row{
     background-color: var(--row-color);
