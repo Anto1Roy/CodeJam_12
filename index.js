@@ -231,11 +231,12 @@ function getTests(){
             //window.alert("You are dying loser, go see your diagnostic and specialists you should see!");
             break;
         }
-        Object.entries(tests[i]).forEach(([key, value])=>{
-            document.getElementById(`specialist${i+1}`).innerHTML=`${key}`;
-            document.getElementById(`number${i+1}`).innerHTML=`${parseFloat(value*100).toFixed(2)}%`;
-            document.querySelector(`.bar-${bar}`).style.width=String(parseFloat(value*100).toFixed(2))+"%";
-        })
+
+        document.getElementById(`specialist${i+1}`).innerHTML=`${tests[i][0]}`;
+        document.getElementById(`number${i+1}`).innerHTML=`${parseFloat(tests[i][1]*100).toFixed(2)}%`;
+        document.querySelector(`.bar-${bar}`).style.width=String(parseFloat(tests[i][1]*100).toFixed(2))+"%";
+        
+        
         bar-=1;
     }
 
