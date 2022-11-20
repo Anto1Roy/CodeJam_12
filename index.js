@@ -192,6 +192,8 @@ function getDiagnostic(){
     if (diseases.length<5){
         resultDiagnosisDiv.style.display="none";
         defaultResult.style.display="block";
+        window.alert("You are one healthy beauty! You can allow yourself to let loose; drink beer, smoke a cigarette, and who knows you can even do drugs ;)");
+
         
 
     }
