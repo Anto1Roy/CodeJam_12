@@ -184,7 +184,7 @@ function getDiagnostic(){
             //unhide the result div, hide the standard div
             resultDiagnosisDiv.style.display="block";
             defaultResult.style.display="none";
-            window.alert("You are dying loser, go see your diagnostic and specialists you should see!");
+            window.alert("Ouff you have been lacking...ever thought about eating a fruit once in a while? Go see your diagnostic and specialists you should see!");
             break;
         }
         Object.entries(diseases[i]).forEach(([key, value])=>{
