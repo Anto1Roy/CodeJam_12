@@ -100,7 +100,8 @@ main{
 }
 
 #SubmitButton{
-    font-size: 14px;
+    font-size: 100%;
+    font-weight: bold;
     position: relative;
     max-width: 70%;
     margin-right: 10%;
