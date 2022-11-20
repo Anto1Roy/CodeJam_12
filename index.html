@@ -265,6 +265,28 @@
             <br>
 
             <li class="row">
+                <label for="abdominalpain"> Severity of abdominal pain? </label>
+                <select name="stomackpain" id="StomachPainSeveritySx" onchange=getValue(this)>
+                    <option value="2">No pain.</option>
+                    <option value="3">Light pain.</option>
+                    <option value="4">Moderate pain.</option>
+                    <option value="5">Severe pain.</option>
+                </select>     
+            </li>
+
+            <br>
+
+            <li class="row">
+                <label for="anal"> Is there a history of anal pain? </label>
+                <select name="anal" id="PeriAnalPainSx" onchange=getValue(this)>
+                    <option value="2">No</option>
+                    <option value="4">Yes, I have pain in the anus.</option>
+                </select>     
+            </li>
+
+            <br>
+
+            <li class="row">
                 <label for="chronicdiarrhea"> Do you have any history of chronic diahrrea? </label>
                 <select name="poop" id="ChronicDiarrheaSx" onchange=getValue(this)>
                     <option value="2">No</option>
