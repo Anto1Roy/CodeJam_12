@@ -169,11 +169,12 @@ submitButton.addEventListener("click", ()=>{
     });
     
     jQuery.ajax({
-        url:`http://api.endlessmedical.com/v1/dx/GetSuggestedTests?SessionID=${id}`,
+        url:`http://api.endlessmedical.com/v1/dx/GetSuggestedSpecializations?SessionID=${id}`,
         success:function(res2){
             console.log("in the tests api");
             console.log(res2);
-            
+            tests=res2.SuggestedSpecializations;
+            console.log(tests);
             getTests();
 
         },
@@ -201,8 +202,6 @@ function getDiagnostic(){
         })
     }
 }
-
-
 
 function getTests(){
 
