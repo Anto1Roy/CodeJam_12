@@ -137,6 +137,8 @@ let tests;
 //Analyze the different symptoms to output the diagnostic
 submitButton.addEventListener("click", ()=>{
     
+    console.log("eventListener");
+    
     jQuery.ajax({
         url:`http://api.endlessmedical.com/v1/dx/Analyze?SessionID=${id}`,
         success:function(res){
@@ -161,21 +163,19 @@ submitButton.addEventListener("click", ()=>{
         },
         error:console.log("Test api problem")
     });
-
-    
-    
-    
     
 })
 
 function popup(){
     var popup = document.getElementById("myPopup");
     popup.classList.toggle("show");
-    setTimeout(hide, 5000);
+    setTimeout(hide, 4500);
 }
 function hide(){
     var popup = document.getElementById("myPopup");
     popup.classList.toggle("hide");
+    document.getElementById("myPopup").style.visibility="hidden";
+    
 
 }
 
@@ -189,6 +189,7 @@ function getDiagnostic(){
         resultDiagnosisDiv.style.display="none";
         defaultResult.style.display="block";
         document.getElementById("myPopup").innerHTML="You are one healthy beauty! You can allow yourself to let loose!";
+        document.getElementById("myPopup").style.visibility="visible";
         popup();
         //window.alert("You are one healthy beauty! You can allow yourself to let loose; drink beer, smoke a cigarette, and who knows you can even do drugs ;)");
 
@@ -199,7 +200,8 @@ function getDiagnostic(){
             //unhide the result div, hide the standard div
             resultDiagnosisDiv.style.display="block";
             defaultResult.style.display="none";
-            document.getElementById("myPopup").innerHTML="Ouff you have been lacking...ever thought about eating a fruit once in a while? Go see your diagnostic, and the specialists you should consult!";
+            document.getElementById("myPopup").innerHTML="Ouff you have been lacking...ever thought about eating a fruit once in a while? Go see your diagnostic and the specialists you should consult!";
+            document.getElementById("myPopup").style.visibility="visible";
             popup();
             //window.alert("Ouff you have been lacking...ever thought about eating a fruit once in a while? Go see your diagnostic and specialists you should see!");
             
