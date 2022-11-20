@@ -13,6 +13,8 @@
     --bg-glass:linear-gradient(to right bottom, rgba(255, 255, 255, .5), rgba(255, 255, 255, 0.2));
     --row-text-color : #d4d7daef;
     --contrast-color : var(--row-color);
+    --shadow-row : rgb(187, 194, 206);
+    
 }
 
 body{
@@ -90,6 +92,7 @@ main{
     padding: 2%;
     padding-left: 2vh;
     border-radius : 1vh;
+    box-shadow: -3px 3px var(--shadow-row), -2px 2px var(--shadow-row), -1px 1px var(--shadow-row);
 
 }
 
@@ -479,6 +482,7 @@ main{
     --bg-primary: #05437c;
     --bg-secondary:#1475ac;
     --bg-main: linear-gradient(to top right, #05437c,#05538b);
+    --shadow-row : rgb(187, 194, 206);
  }
 
  .cold{
@@ -490,6 +494,7 @@ main{
     --bg-primary: #74d5e8;
     --bg-secondary: #38bed9; 
     --bg-main: linear-gradient(to top right, #428dd3a8,#1474ac81);
+    --shadow-row : rgb(33, 63, 119);
  }
 
 
