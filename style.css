@@ -105,6 +105,10 @@ main{
     background-color: var(--bg-primary);
     cursor: pointer;
 }
+#resultDiagnosisDiv {
+    margin-left: 23vh;
+    margin-top: 5vh;
+}
   .heading {
     font-size: 25px;
     margin-right: 25px;
