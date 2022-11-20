@@ -185,7 +185,7 @@ submitButton.addEventListener("click", ()=>{
 })
 
 
-const resultDiagnosisDiv=document.getElementById("resultDIagnosisDiv");
+const resultDiagnosisDiv=document.getElementById("resultDiagnosisDiv");
 const defaultResult=document.getElementById("defaultResult");
 
 function getDiagnostic(){
