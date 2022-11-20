@@ -1,6 +1,4 @@
 const themeButton=document.getElementById("themeButton");
-
-
 const sunnyIcon=document.getElementById("sunnyIcon");
 const coldIcon=document.getElementById("coldIcon");
 
@@ -47,15 +45,9 @@ function toggleTheme(){
 themeButton.addEventListener("click", toggleTheme);
 
 
-//here is the logic for the different food applications
-
-
 //DIV
-//given a meal, would return a list of ingredients, link to recipe, picture
 const profileDiv=document.querySelector("#profileDiv");
-//given some ingredients that we have in the fridge, would return list of recipes that we could do
 const notesDiv=document.querySelector("#DiagnosisDiv");
-//given the ingredients on sale in the grocery store, would return a list of recipes containing those elements
 const libraryDiv=document.querySelector("#TestDiv");
 
 
@@ -85,12 +77,6 @@ practiceButton.addEventListener("click", ()=>{
     libraryDiv.style.display="block";
     myVar=libraryDiv;
 });
-
-
-
-
-
-
 
 //This function is called when the user submits its symptoms
 
@@ -143,12 +129,7 @@ function getValue(obj){
 
 }
 
-/*
-analyze = requests.get(f"{URL}/Analyze?SessionID={id}")
-    for i in range(0,5):
-        print(eval(analyze.content)["Diseases"][i])
-    tests = requests.get(f"{URL}/GetSuggestedTests?SessionID={id}")
-*/
+
 
 const submitButton=document.querySelector("#SubmitButton");
 let diseases;
@@ -243,15 +224,3 @@ function getTests(){
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
