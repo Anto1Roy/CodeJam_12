@@ -186,14 +186,19 @@ submitButton.addEventListener("click", ()=>{
 
 
 const resultDiagnosisDiv=document.getElementById("resultDIagnosisDiv");
+const defaultResult=document.getElementById("defaultResult");
+
 function getDiagnostic(){
     if (diseases.length<5){
-        //hide the result div
+        resultDiagnosisDiv.style.display="none";
+        defaultResult.style.display="block";
 
     }
     for(var i=0; i<diseases.length;i++){
         if (i==5){
             //unhide the result div, hide the standard div
+            resultDiagnosisDiv.style.display="block";
+            defaultResult.style.display="none";
             break;
         }
         Object.entries(diseases[i]).forEach(([key, value])=>{
