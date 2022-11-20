@@ -192,6 +192,7 @@ function getDiagnostic(){
     if (diseases.length<5){
         resultDiagnosisDiv.style.display="none";
         defaultResult.style.display="block";
+        
 
     }
     let bar=5;
@@ -212,7 +213,31 @@ function getDiagnostic(){
     }
 }
 
+
+const defaultResultSpecialization=document.getElementById("defaultResultSpecialization");
+const resultSpecialistDiv=document.getElementById("resultSpecialistDiv");
 function getTests(){
+    if (tests.length<5){
+        resultSpecialistDiv.style.display="none";
+        defaultResultSpecialization.style.display="block";
+
+    }
+    let bar=8;
+    for(var i=0; i<tests.length;i++){
+        if (i==3){
+            //unhide the result div, hide the standard div
+            resultSpecialistDiv.style.display="block";
+            defaultResultSpecialization.style.display="none";
+            //window.alert("You are dying loser, go see your diagnostic and specialists you should see!");
+            break;
+        }
+        Object.entries(tests[i]).forEach(([key, value])=>{
+            document.getElementById(`specialist${i+1}`).innerHTML=`${key}`;
+            document.getElementById(`number${i+1}`).innerHTML=`${parseFloat(value*100).toFixed(2)}%`;
+            document.querySelector(`.bar-${bar}`).style.width=String(parseFloat(value*100).toFixed(2))+"%";
+        })
+        bar-=1;
+    }
 
 }
 
