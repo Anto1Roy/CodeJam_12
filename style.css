@@ -173,7 +173,7 @@ main{
     }
   }
 /* fireworks yeah */
-@keyframes fireworks {
+@keyframes fireworks1 {
     0%{
         transform: translateY(50vh);
     }
@@ -182,17 +182,17 @@ main{
         width: 5px;
         height: 5px;
     }
-    80%{
+    70%{
        opacity: 100%;
     }
     100%{
         
         opacity: 0%;
-        width: 150px;
-        height: 150px;
+        width: 100px;
+        height: 100px;
     }
 }
-/*
+
 @keyframes fireworks2 {
     0%{
         transform: translateY(80vh);
@@ -202,14 +202,14 @@ main{
         width: 5px;
         height: 5px;
     }
-    80%{
+    70%{
        opacity: 100%;
     }
     100%{
         
         opacity: 0%;
-        width: 300px;
-        height: 300px;
+        width: 200px;
+        height: 200px;
     }
 }
 @keyframes fireworks3 {
@@ -221,15 +221,15 @@ main{
         width: 5px;
         height: 5px;
     }
-    80%{
+    70%{
        opacity: 100%;
     }
     100%{
         opacity: 0%;
-        width: 200px;
-        height: 200px;
+        width: 125px;
+        height: 125px;
     }
-}*/
+}
 .fireworks1,
 .fireworks2,
 .fireworks3 {
@@ -261,20 +261,20 @@ main{
 .fireworks1 {
     bottom : 30%;
     right : 30%;
-    animation: fireworks 3s infinite;
+    animation: fireworks1 1.5s infinite;
     animation-delay: 0.5s;
 }
 .fireworks2 {
     bottom : 30%;
     left : 30%;
-    animation: fireworks 3s infinite;
+    animation: fireworks2 3s infinite;
     animation-delay: 1s;
 }
 .fireworks3 {
     bottom : 30%;
     right : 50%;
-    animation: fireworks 2s infinite;
-    animation-delay: 0.6s;
+    animation: fireworks3 2s infinite;
+    animation-delay: 0.75s;
 }
 
 
